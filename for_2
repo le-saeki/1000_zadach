@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int f (int a, int b)
+{
+for (; a < b; a++)
+   cout << a << endl;
+ 
+}
+int main()
+{
+	cout<<f(6,245);
+	return 0;
+}
