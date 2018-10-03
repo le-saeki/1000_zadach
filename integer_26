@@ -4,10 +4,10 @@ int main()
 {
     int day=19;
     while (day > 7)
-        day=day-7;
+        day=day%7+1;
       
  
-    std::cout << day+1;
+    std::cout << day;
  
     return 0;
 }
