@@ -1,0 +1,15 @@
+#include <iostream>
+ 
+int main()
+{
+    int day=19;
+    int k=6;
+    int n=k-2;
+    while (day > 7)
+        day=(day+n)%7+1;
+      
+ 
+    std::cout << day;
+ 
+    return 0;
+}
