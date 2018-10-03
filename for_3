@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int f (int a, int b)
+{
+for (; a > b; a--)
+   {cout << a;}
+   cout<<"   kol-vo:"<<b;
+ 
+}
+int main()
+{
+	cout<<f(9,6);
+	return 0;
+}
