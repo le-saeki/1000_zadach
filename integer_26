@@ -1,0 +1,13 @@
+#include <iostream>
+ 
+int main()
+{
+    int day=19;
+    while (day > 7)
+        day=day-7;
+      
+ 
+    std::cout << day+1;
+ 
+    return 0;
+}
