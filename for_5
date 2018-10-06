@@ -1,0 +1,15 @@
+
+#include <iostream>
+
+using namespace std;
+
+ double f(double rub)
+   {
+for(double i= 1.2; i <=2; i=i+0.2)
+        {cout << i << "-" <<  rub*i<< endl;}
+}
+   
+int main()
+{
+	cout<<f(5);
+return 0;
