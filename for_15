@@ -1,0 +1,18 @@
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+ int f(int i, int a, int b)
+   {
+int temp=1;
+for(; i <b; ++i)
+        {temp=temp *a ;} 
+}
+   
+int main()
+{
+	cout<<f(0,1,9);
+return 0;
+}
