@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double f(double N, double X)
+{
+	double temp=1;
+	for(; N<10;++N)
+	temp=temp+(pow(X,2* N)/N);
+	return temp;
+}
+int main() 
+{
+	cout<<f(1,-2);
+	return 0;
+}
