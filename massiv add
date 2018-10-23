@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+using UP=int(*)(int,int);
+
+int f(int a,int b)
+{
+	return a+b;
+	
+}
+
+int n(int*arr, int last, int first, UP p, int temp)
+{
+	for(;first<last;++first)
+{
+temp=p(temp,arr[first]);}
+return temp;
+}
