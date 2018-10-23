@@ -16,3 +16,9 @@ int n(int*arr, int last, int first, UP p, int temp)
 temp=p(temp,arr[first]);}
 return temp;
 }
+
+int main() {
+	int array [5]{3,8,5,3,8};
+	cout<<n(array,5,0,f,0);
+	return 0;
+}
