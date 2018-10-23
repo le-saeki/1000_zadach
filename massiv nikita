@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+using UP=bool(*)(int);
+
+bool f(int a)
+{
+	return a%10==5;
+	
+}
+
+bool all_of(int*arr, int last, int first, UP p)
+{
+	for(;first<last;++first)
+{
+	if(p(arr[first]))
+{return true;}}
+return false;
+}
+
+int main() {
+	int array [5]{1003,2658,6765,5533,8664};
+	std::cout<<all_of(array,5,0,f)<<std::endl;
+	return 0;
+}
