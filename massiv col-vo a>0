@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+using UP=bool(*)(int);
+
+bool f(int a)
+{
+	return a>0;
+}
+
+int n(int*arr, int last, int first,UP p)
+{
+	int temp=0;
+	for(;first<last;++first)
+	{
+	
+	if(p(arr[first]))
+		{++temp;}
+
+	}
+		return temp;
+}
+
+int main() {
+	int array [5]{3,8,5,3,8};
+	cout<<n(array,5,0,f);
+	return 0;
+}
