@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+ 
+struct Date
+{
+	int year;
+	int month;
+	int day;
+	Date()=default;
+ 
+	Date (int m_year, int m_month, int m_day)
+	{
+		year=m_year;
+		month=m_month;
+		day=m_day;
+	}
+};
+ 
+int main() {
+Date a(20178,65,635446);
+std::cout<<a.year<<a.month<<a.day;
+}
